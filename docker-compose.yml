@@ -1,0 +1,9 @@
+version: '3.6'
+services:
+  treinamento:
+    container_name: treinamento
+    build: .
+    volumes: 
+      - ./src:/var/www/treinamento
+    ports:
+      - 80:80
